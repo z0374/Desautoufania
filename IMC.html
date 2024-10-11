@@ -28,7 +28,7 @@ index();
 	function calc(){
 		let ps = document.getElementById('ps').value;
 		let al = document.getElementById('al').value;
-		let IMC = ps / (al * al);
+		let IMC = ps / (al * (al/100));
 		est("div","<h1></h1><h2></h2><br><button></button>","id","rst");
 		est('h1','O seu IMC é ' + parseFloat(IMC));
 			if(IMC < 18.5){est("h2","Você esta muito anorexo(a), <br>Vá tomar uma vitamina para engordar");}else
